@@ -100,3 +100,10 @@ source $ZSH/oh-my-zsh.sh
 
 export PATH=/opt/apache-maven-3.6.1/bin:$PATH
 alias config='/usr/bin/git --git-dir=/Users/tanmay/.cfg/ --work-tree=/Users/tanmay'
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
+
